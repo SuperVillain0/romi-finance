@@ -76,6 +76,47 @@
   z-index: 2;
 }
 
+/* Romi Tooltip Styling */
+.romi-tooltip-bottom {
+  position: absolute;
+  top: 7rem;
+  left: 7rem;
+  opacity: 0;
+  padding: 0.7rem;
+  border-radius: 2px;
+  background-color: rgb(11, 11, 16);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: all 0.15s linear;
+}
+.romi-chart-circle:hover .romi-tooltip-bottom {
+  opacity: 1;
+  transform: translate(-1rem, 0);
+}
+.romi-tooltip-bottom::before {
+  content: "";
+}
+
+.romi-tooltip-top {
+  position: absolute;
+  top: 2.5rem;
+  left: 1rem;
+  opacity: 0;
+  padding: 0.7rem;
+  border-radius: 2px;
+  background-color: rgb(11, 11, 16);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: all 0.15s linear;
+}
+.romi-chart-circle:hover .romi-tooltip-top {
+  opacity: 1;
+  transform: translate(-1rem, 0);
+}
+.romi-tooltip-top::before {
+  content: "";
+}
+
 /* ZLP Chart Styling */
 .zlp-chart {
   display: flex;
@@ -109,7 +150,7 @@
   box-sizing: border-box;
 }
 
-/* Tooltip Styling */
+/* ZLP Tooltip Styling */
 .chart {
   appearance: none;
   cursor: pointer;
